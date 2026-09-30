@@ -15,6 +15,13 @@ A Machine Learning project that classifies cancer cases as malignant or benign u
 * Improve the model evaluation process
 
 
+## Contributing
+
+Contributions are welcome.
+
+You can improve the preprocessing, add new Machine Learning algorithms, improve the evaluation process, or add new visualizations to the project.
+
+
 ## License
 
 This project is licensed under the **MIT License**.
