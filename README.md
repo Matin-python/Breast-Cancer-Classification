@@ -1,5 +1,6 @@
-# Breast Cancer Classification
+# 🩺 Cancer Classification using Logistic Regression
 
+A Machine Learning project that classifies cancer cases as malignant or benign using Logistic Regression with data normalization and model accuracy evaluation.
 
 
 ## License
