@@ -12,6 +12,20 @@ The dataset is prepared by removing unnecessary columns, converting the diagnosi
 The final accuracy is calculated by comparing the predicted results with the actual diagnosis labels.
 
 
+## Features
+
+* Cancer classification
+* Data preprocessing
+* Removal of unnecessary columns
+* Conversion of diagnosis labels into numerical values
+* Feature normalization
+* Train/test data splitting
+* Logistic Regression classification
+* Prediction on test data
+* Accuracy evaluation
+
+
+
 ## Future Improvements
 
 * Use a fixed `random_state` for reproducible results
