@@ -135,6 +135,23 @@ Compare Predictions with Actual Values
 Calculate Accuracy
 ```
 
+## Model
+
+### Logistic Regression
+
+Logistic Regression is used as the classification algorithm for this project.
+
+```python id="h2k9wf"
+model = LogisticRegression()
+model.fit(x_train, y_train)
+```
+
+After training, the model predicts the diagnosis of the test samples:
+
+```python id="v6p3zs"
+out = model.predict(x_test)
+```
+
 
 ## Future Improvements
 
