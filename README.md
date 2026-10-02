@@ -109,6 +109,33 @@ The dataset is divided into training and testing sets using a 85/15 split.
 ```
 
 
+## Machine Learning Workflow
+
+The project follows the workflow below:
+
+```text id="r7v3zn"
+Cancer Dataset
+      ↓
+Remove Unnecessary Columns
+      ↓
+Convert Diagnosis Labels
+      ↓
+Separate Features and Target
+      ↓
+Normalize Input Features
+      ↓
+Train/Test Split
+      ↓
+Train Logistic Regression Model
+      ↓
+Make Predictions
+      ↓
+Compare Predictions with Actual Values
+      ↓
+Calculate Accuracy
+```
+
+
 ## Future Improvements
 
 * Use a fixed `random_state` for reproducible results
