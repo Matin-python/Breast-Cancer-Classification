@@ -32,6 +32,32 @@ The final accuracy is calculated by comparing the predicted results with the act
 * Scikit-learn
 
 
+## Dataset
+
+The project uses the following dataset:
+
+```text id="g8y4sl"
+cancer.csv
+```
+
+The dataset contains numerical features related to cancer cases.
+
+The target variable is:
+
+```text id="j5m2rx"
+diagnosis
+```
+
+The diagnosis values are converted into numerical labels:
+
+```text id="n3c7qw"
+M → 1
+B → 0
+```
+
+where `M` represents a malignant case and `B` represents a benign case.
+
+
 ## Future Improvements
 
 * Use a fixed `random_state` for reproducible results
