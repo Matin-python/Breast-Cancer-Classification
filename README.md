@@ -165,6 +165,25 @@ model.fit(x_train, y_train)
 The trained model is then used to predict the classes of the test dataset.
 
 
+## Evaluation
+
+The predictions are compared with the actual test labels.
+
+```python id="n5w2lr"
+compare_out = y_test == out
+```
+
+The project counts the number of incorrect predictions and then calculates the classification accuracy.
+
+```python id="d4k7yp"
+print(counter, "/", len(compare_out))
+print(100 - (counter*100 / len(compare_out)))
+```
+
+The final result represents the percentage of correctly classified test samples.
+
+
+
 ## Future Improvements
 
 * Use a fixed `random_state` for reproducible results
