@@ -80,6 +80,34 @@ data.diagnosis = [1 if each == 'M' else 0 for each in data.diagnosis]
 
 This allows the Logistic Regression model to work with numerical target values.
 
+### Separating Features and Target
+
+The input features and target variable are separated:
+
+```python id="z7t1qp"
+x_data = data.drop(['diagnosis'], axis=1)
+y_data = data['diagnosis']
+```
+
+### Data Normalization
+
+The input features are normalized using Min-Max normalization:
+
+```python id="u5n8ad"
+x_data = (x_data - x_data.min()) / (x_data.max() - x_data.min())
+```
+
+This scales the feature values to a common range.
+
+### Train/Test Split
+
+The dataset is divided into training and testing sets using a 85/15 split.
+
+```text id="m4x7pk"
+85% → Training data
+15% → Testing data
+```
+
 
 ## Future Improvements
 
