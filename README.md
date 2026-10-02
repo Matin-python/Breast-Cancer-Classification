@@ -182,6 +182,13 @@ print(100 - (counter*100 / len(compare_out)))
 
 The final result represents the percentage of correctly classified test samples.
 
+### Example Output
+
+```text id="p9x3kt"
+XX / XXX
+XX.XX
+```
+
 
 
 ## Future Improvements
