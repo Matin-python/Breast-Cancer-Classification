@@ -25,6 +25,12 @@ The final accuracy is calculated by comparing the predicted results with the act
 * Accuracy evaluation
 
 
+## Technologies Used
+
+* Python
+* Pandas
+* Scikit-learn
+
 
 ## Future Improvements
 
