@@ -135,6 +135,7 @@ Compare Predictions with Actual Values
 Calculate Accuracy
 ```
 
+
 ## Model
 
 ### Logistic Regression
@@ -151,6 +152,17 @@ After training, the model predicts the diagnosis of the test samples:
 ```python id="v6p3zs"
 out = model.predict(x_test)
 ```
+
+
+## Model Training
+
+The Logistic Regression model is trained using the training dataset:
+
+```python id="q8m1xc"
+model.fit(x_train, y_train)
+```
+
+The trained model is then used to predict the classes of the test dataset.
 
 
 ## Future Improvements
