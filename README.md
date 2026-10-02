@@ -58,6 +58,29 @@ B → 0
 where `M` represents a malignant case and `B` represents a benign case.
 
 
+## Data Preprocessing
+
+Several preprocessing steps are performed before training the model.
+
+### Removing Unnecessary Columns
+
+The `id` and `Unnamed: 32` columns are removed because they are not used as input features.
+
+```python id="p2y6vk"
+data = data.drop(['id', 'Unnamed: 32'], axis=1)
+```
+
+### Encoding Diagnosis Labels
+
+The diagnosis values are converted into binary numerical values:
+
+```python id="c9x4mw"
+data.diagnosis = [1 if each == 'M' else 0 for each in data.diagnosis]
+```
+
+This allows the Logistic Regression model to work with numerical target values.
+
+
 ## Future Improvements
 
 * Use a fixed `random_state` for reproducible results
