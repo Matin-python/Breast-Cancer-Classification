@@ -205,6 +205,21 @@ Cancer-Classification/
 ```
 
 
+## Installation
+
+Install the required libraries using:
+
+```bash id="w3k8mf"
+pip install pandas scikit-learn
+```
+
+You can also install all dependencies using:
+
+```bash id="c7r5yn"
+pip install -r requirements.txt
+```
+
+
 
 ## Future Improvements
 
