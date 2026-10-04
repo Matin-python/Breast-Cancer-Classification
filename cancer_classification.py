@@ -17,8 +17,8 @@ x_data = (x_data - x_data.min()) / (x_data.max() - x_data.min())
 x_train, x_test, y_train, y_test = train_test_split (x_data, y_data, 
                                                      test_size= 0.15, 
                                                      random_state= 42)
-model = LogisticRegression()
-model.maxiter = 1000000
+
+model = LogisticRegression(max_iter= 100000)
 model.fit(x_train, y_train)
 
 out = model.predict(x_test)
