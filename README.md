@@ -220,6 +220,20 @@ pip install -r requirements.txt
 ```
 
 
+## How to Run
+
+1. Make sure Python is installed.
+2. Place `cancer.csv` in the project directory.
+3. Install the required libraries.
+4. Run the Python script:
+
+```bash id="x4m9pv"
+python cancer_classification.py
+```
+
+The program will train the Logistic Regression model, make predictions on the test dataset, and print the number of incorrect predictions and the final accuracy.
+
+
 
 ## Future Improvements
 
