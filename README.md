@@ -236,7 +236,6 @@ The program will train the Logistic Regression model, make predictions on the te
 
 ## Future Improvements
 
-* Use a fixed `random_state` for reproducible results
 * Add training and test accuracy separately
 * Add a confusion matrix
 * Add precision, recall, and F1-score
