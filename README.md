@@ -189,6 +189,21 @@ XX / XXX
 XX.XX
 ```
 
+The exact accuracy depends on the dataset and the resulting train/test split.
+
+
+## Project Structure
+
+```text id="s6v2qm"
+Cancer-Classification/
+│
+├── cancer.csv
+├── cancer_classification.py
+├── requirements.txt
+├── LICENSE
+└── README.md
+```
+
 
 
 ## Future Improvements
