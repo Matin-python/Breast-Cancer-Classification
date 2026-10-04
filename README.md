@@ -36,7 +36,7 @@ The final accuracy is calculated by comparing the predicted results with the act
 
 The project uses the following dataset:
 
-```text id="g8y4sl"
+```text 
 cancer.csv
 ```
 
@@ -44,13 +44,13 @@ The dataset contains numerical features related to cancer cases.
 
 The target variable is:
 
-```text id="j5m2rx"
+```text 
 diagnosis
 ```
 
 The diagnosis values are converted into numerical labels:
 
-```text id="n3c7qw"
+```text 
 M → 1
 B → 0
 ```
@@ -66,7 +66,7 @@ Several preprocessing steps are performed before training the model.
 
 The `id` and `Unnamed: 32` columns are removed because they are not used as input features.
 
-```python id="p2y6vk"
+```python 
 data = data.drop(['id', 'Unnamed: 32'], axis=1)
 ```
 
@@ -74,7 +74,7 @@ data = data.drop(['id', 'Unnamed: 32'], axis=1)
 
 The diagnosis values are converted into binary numerical values:
 
-```python id="c9x4mw"
+```python 
 data.diagnosis = [1 if each == 'M' else 0 for each in data.diagnosis]
 ```
 
@@ -84,7 +84,7 @@ This allows the Logistic Regression model to work with numerical target values.
 
 The input features and target variable are separated:
 
-```python id="z7t1qp"
+```python 
 x_data = data.drop(['diagnosis'], axis=1)
 y_data = data['diagnosis']
 ```
@@ -93,7 +93,7 @@ y_data = data['diagnosis']
 
 The input features are normalized using Min-Max normalization:
 
-```python id="u5n8ad"
+```python 
 x_data = (x_data - x_data.min()) / (x_data.max() - x_data.min())
 ```
 
@@ -103,7 +103,7 @@ This scales the feature values to a common range.
 
 The dataset is divided into training and testing sets using a 85/15 split.
 
-```text id="m4x7pk"
+```text 
 85% → Training data
 15% → Testing data
 ```
@@ -113,7 +113,7 @@ The dataset is divided into training and testing sets using a 85/15 split.
 
 The project follows the workflow below:
 
-```text id="r7v3zn"
+```text 
 Cancer Dataset
       ↓
 Remove Unnecessary Columns
@@ -142,14 +142,14 @@ Calculate Accuracy
 
 Logistic Regression is used as the classification algorithm for this project.
 
-```python id="h2k9wf"
+```python 
 model = LogisticRegression()
 model.fit(x_train, y_train)
 ```
 
 After training, the model predicts the diagnosis of the test samples:
 
-```python id="v6p3zs"
+```python
 out = model.predict(x_test)
 ```
 
@@ -158,7 +158,7 @@ out = model.predict(x_test)
 
 The Logistic Regression model is trained using the training dataset:
 
-```python id="q8m1xc"
+```python 
 model.fit(x_train, y_train)
 ```
 
@@ -169,13 +169,13 @@ The trained model is then used to predict the classes of the test dataset.
 
 The predictions are compared with the actual test labels.
 
-```python id="n5w2lr"
+```python 
 compare_out = y_test == out
 ```
 
 The project counts the number of incorrect predictions and then calculates the classification accuracy.
 
-```python id="d4k7yp"
+```python 
 print(counter, "/", len(compare_out))
 print(100 - (counter*100 / len(compare_out)))
 ```
@@ -184,7 +184,7 @@ The final result represents the percentage of correctly classified test samples.
 
 ### Example Output
 
-```text id="p9x3kt"
+```text
 XX / XXX
 XX.XX
 ```
@@ -194,7 +194,7 @@ The exact accuracy depends on the dataset and the resulting train/test split.
 
 ## Project Structure
 
-```text id="s6v2qm"
+```text 
 Cancer-Classification/
 │
 ├── cancer.csv
@@ -209,13 +209,13 @@ Cancer-Classification/
 
 Install the required libraries using:
 
-```bash id="w3k8mf"
+```bash 
 pip install pandas scikit-learn
 ```
 
 You can also install all dependencies using:
 
-```bash id="c7r5yn"
+```bash 
 pip install -r requirements.txt
 ```
 
@@ -227,12 +227,11 @@ pip install -r requirements.txt
 3. Install the required libraries.
 4. Run the Python script:
 
-```bash id="x4m9pv"
+```bash 
 python cancer_classification.py
 ```
 
 The program will train the Logistic Regression model, make predictions on the test dataset, and print the number of incorrect predictions and the final accuracy.
-
 
 
 ## Future Improvements
