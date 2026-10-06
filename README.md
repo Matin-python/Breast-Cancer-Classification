@@ -171,20 +171,19 @@ Calculate Accuracy
 
 ## Model
 
-### Logistic Regression
+Six different Machine Learning classification algorithms are used in this project.
 
-Logistic Regression is used as the classification algorithm for this project.
+### 1. Support Vector Machine
 
-```python 
-model = LogisticRegression()
-model.fit(x_train, y_train)
-```
-
-After training, the model predicts the diagnosis of the test samples:
+A Support Vector Machine classifier with a linear kernel is used:
 
 ```python
-out = model.predict(x_test)
+model_SVM = svm.SVC(kernel='linear')
+model_SVM.fit(X_train, y_train)
 ```
+
+The trained model is then used to predict the test data.
+
 
 
 ## Model Training
