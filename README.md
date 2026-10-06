@@ -1,16 +1,24 @@
-# 🩺 Cancer Classification using Logistic Regression
+# 🩺 Breast Cancer Classification using Machine Learning
 
-A Machine Learning project that classifies cancer cases as malignant or benign using Logistic Regression with data normalization and model accuracy evaluation.
+A Machine Learning project that classifies breast cancer cases as malignant or benign by comparing six different classification algorithms using the Scikit-learn Breast Cancer dataset.
 
 
 ## Overview
 
-This project uses a cancer dataset to classify cases into two categories: **malignant (M)** and **benign (B)**.
+This project demonstrates how different Machine Learning classification algorithms can be used to classify breast cancer cases.
 
-The dataset is prepared by removing unnecessary columns, converting the diagnosis labels into numerical values, and normalizing the input features. Logistic Regression is then trained on the processed data and used to predict the diagnosis of unseen test samples.
+The project uses the built-in Breast Cancer dataset provided by Scikit-learn. The dataset contains numerical features describing characteristics of breast cancer cells, with the goal of predicting the cancer diagnosis.
 
-The final accuracy is calculated by comparing the predicted results with the actual diagnosis labels.
+Six different classification algorithms are trained and evaluated using the same training and testing datasets:
 
+* Support Vector Machine (SVM)
+* Gaussian Naive Bayes
+* Decision Tree
+* Random Forest
+* XGBoost
+* K-Nearest Neighbors (KNN)
+
+The performance of each model is evaluated using **accuracy score**, allowing the results of the different algorithms to be compared.
 
 ## Features
 
