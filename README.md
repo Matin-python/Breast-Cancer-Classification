@@ -20,6 +20,7 @@ Six different classification algorithms are trained and evaluated using the same
 
 The performance of each model is evaluated using **accuracy score**, allowing the results of the different algorithms to be compared.
 
+
 ## Features
 
 * Breast cancer classification
@@ -40,6 +41,7 @@ The performance of each model is evaluated using **accuracy score**, allowing th
 * Python
 * Pandas
 * Scikit-learn
+* XGBoost
 
 
 ## Dataset
