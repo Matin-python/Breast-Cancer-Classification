@@ -184,6 +184,18 @@ model_SVM.fit(X_train, y_train)
 
 The trained model is then used to predict the test data.
 
+### 2. Gaussian Naive Bayes
+
+Gaussian Naive Bayes is used as another classification approach:
+
+```python
+model_GNB = GaussianNB()
+model_GNB.fit(X_train, y_train)
+```
+
+The model predicts the classes of the test samples.
+
+
 
 
 ## Model Training
