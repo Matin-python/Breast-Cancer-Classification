@@ -22,15 +22,17 @@ The performance of each model is evaluated using **accuracy score**, allowing th
 
 ## Features
 
-* Cancer classification
-* Data preprocessing
-* Removal of unnecessary columns
-* Conversion of diagnosis labels into numerical values
-* Feature normalization
+* Breast cancer classification
+* Built-in Scikit-learn dataset
 * Train/test data splitting
-* Logistic Regression classification
-* Prediction on test data
+* Support Vector Machine classification
+* Gaussian Naive Bayes classification
+* Decision Tree classification
+* Random Forest classification
+* XGBoost classification
+* K-Nearest Neighbors classification
 * Accuracy evaluation
+* Comparison of multiple Machine Learning models
 
 
 ## Technologies Used
