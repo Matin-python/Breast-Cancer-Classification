@@ -46,19 +46,28 @@ The performance of each model is evaluated using **accuracy score**, allowing th
 
 ## Dataset
 
-The project uses the following dataset:
+The project uses the **Breast Cancer Wisconsin Diagnostic dataset** provided by Scikit-learn.
 
-```text 
-cancer.csv
+The dataset is loaded directly using:
+
+```python
+from sklearn import datasets
+
+cancer = datasets.load_breast_cancer()
 ```
+
+The dataset provides numerical features related to breast cancer cell characteristics.
+
+The target variable contains two classes:
+
+```text
+malignant
+benign
+```
+
+The available feature names and target names are displayed in the notebook.
 
 The dataset contains numerical features related to cancer cases.
-
-The target variable is:
-
-```text 
-diagnosis
-```
 
 The diagnosis values are converted into numerical labels:
 
