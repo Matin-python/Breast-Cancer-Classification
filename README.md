@@ -81,7 +81,19 @@ where `M` represents a malignant case and `B` represents a benign case.
 
 ## Data Preprocessing
 
-Several preprocessing steps are performed before training the model.
+The dataset is loaded directly from Scikit-learn and separated into input features and target labels.
+
+The input data is stored in:
+
+```python
+cancer.data
+```
+
+and the target labels are stored in:
+
+```python
+cancer.target
+```
 
 ### Removing Unnecessary Columns
 
