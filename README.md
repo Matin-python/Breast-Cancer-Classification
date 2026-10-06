@@ -195,7 +195,14 @@ model_GNB.fit(X_train, y_train)
 
 The model predicts the classes of the test samples.
 
+### 3. Decision Tree
 
+A Decision Tree classifier is trained using the training dataset:
+
+```python
+model_DT = DecisionTreeClassifier()
+model_DT.fit(X_train, y_train)
+```
 
 
 ## Model Training
