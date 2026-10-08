@@ -295,40 +295,54 @@ model_KN.fit(X_train, y_train)
 
 ## Model Training
 
-The Logistic Regression model is trained using the training dataset:
+The Python project trains a Logistic Regression model using the locally loaded dataset.
 
-```python 
-model.fit(x_train, y_train)
-```
+The Jupyter Notebook trains six different classification models using the dataset loaded from Scikit-learn.
 
-The trained model is then used to predict the classes of the test dataset.
+Each model generates predictions for the test dataset, and the results are evaluated using accuracy.
 
 
 ## Evaluation
 
-The predictions are compared with the actual test labels.
+The projects use **accuracy** to evaluate classification performance.
 
-```python 
-compare_out = y_test == out
+### Python Project
+
+The Python script compares the predicted values with the actual test labels and calculates the percentage of correct predictions.
+
+### Jupyter Notebook
+
+The notebook uses:
+
+```python
+metrics.accuracy_score(y_test, y_pred)
 ```
 
-The project counts the number of incorrect predictions and then calculates the classification accuracy.
-
-```python 
-print(counter, "/", len(compare_out))
-print(100 - (counter*100 / len(compare_out)))
-```
-
-The final result represents the percentage of correctly classified test samples.
+to calculate the accuracy of each classifier.
 
 ### Example Output
 
 ```text
+Python Project:
+
 XX / XXX
 XX.XX
+
+
+Jupyter Notebook:
+
+SVM Accuracy: XX.XX
+Naive Bayes Accuracy: XX.XX
+Decision Tree Accuracy: XX.XX
+Random Forest Accuracy: XX.XX
+XGBoost Accuracy: XX.XX
+KNN Accuracy: XX.XX
 ```
 
-The exact accuracy depends on the dataset and the resulting train/test split.
+The exact results may vary depending on the model configuration and train/test split.
+
+
+
 
 
 ## Project Structure
