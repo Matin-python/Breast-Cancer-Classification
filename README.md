@@ -367,6 +367,48 @@ Breast-Cancer-Classification/
 └── README.md
 ```
 
+
+## How to Run
+
+### Python Project
+
+Run the Python implementation:
+
+```bash
+python cancer_classification.py
+```
+
+The program will load `cancer.csv`, preprocess the data, train the Logistic Regression model, make predictions, and display the final accuracy.
+
+### Jupyter Notebook
+
+Start Jupyter Notebook:
+
+```bash
+jupyter notebook
+```
+
+Then open:
+
+```text
+breast_cancer_classification.ipynb
+```
+
+Run the notebook cells from top to bottom to train the six classification models and compare their accuracy.
+
+
+## Requirements
+
+The main dependencies are:
+
+```text
+pandas
+scikit-learn
+xgboost
+jupyter
+```
+
+
 ## Installation
 
 Install the required libraries using:
