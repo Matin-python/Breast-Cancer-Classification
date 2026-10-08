@@ -219,39 +219,77 @@ Compare Models
 ```
 
 
-## Model
+## Models
 
-Six different Machine Learning classification algorithms are used in this project.
+### Logistic Regression
 
-### 1. Support Vector Machine
+The Python implementation uses Logistic Regression as its classification algorithm.
 
-A Support Vector Machine classifier with a linear kernel is used:
+```python
+model = LogisticRegression()
+model.fit(x_train, y_train)
+```
+
+The trained model is used to predict the diagnosis of the test samples.
+
+
+### Support Vector Machine
+
+The notebook uses an SVM classifier with a linear kernel:
 
 ```python
 model_SVM = svm.SVC(kernel='linear')
 model_SVM.fit(X_train, y_train)
 ```
 
-The trained model is then used to predict the test data.
 
-### 2. Gaussian Naive Bayes
+### Gaussian Naive Bayes
 
-Gaussian Naive Bayes is used as another classification approach:
+Gaussian Naive Bayes is used as another classification model:
 
 ```python
 model_GNB = GaussianNB()
 model_GNB.fit(X_train, y_train)
 ```
 
-The model predicts the classes of the test samples.
 
-### 3. Decision Tree
+### Decision Tree
 
-A Decision Tree classifier is trained using the training dataset:
+The notebook uses a Decision Tree classifier:
 
 ```python
 model_DT = DecisionTreeClassifier()
 model_DT.fit(X_train, y_train)
+```
+
+
+### Random Forest
+
+Random Forest is used as an ensemble classification algorithm:
+
+```python
+model_RF = RandomForestClassifier()
+model_RF.fit(X_train, y_train)
+```
+
+
+### XGBoost
+
+XGBoost is included as another ensemble learning algorithm:
+
+```python
+model_XGB = xg.XGBClassifier()
+model_XGB.fit(X_train, y_train)
+```
+
+
+### K-Nearest Neighbors
+
+K-Nearest Neighbors is used as the final classifier:
+
+```python
+model_KN = KNeighborsClassifier()
+model_KN.fit(X_train, y_train)
 ```
 
 
