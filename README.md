@@ -142,46 +142,41 @@ Therefore, both implementations work with the **same dataset**, but the source o
 
 ## Data Preprocessing
 
-The dataset is loaded directly from Scikit-learn and separated into input features and target labels.
+### Python Implementation
 
-The input data is stored in:
+The first implementation performs the following preprocessing steps:
+
+```text
+Load cancer.csv
+      ↓
+Remove unnecessary columns
+      ↓
+Convert diagnosis labels
+      ↓
+Separate features and target
+      ↓
+Normalize features
+      ↓
+Train/Test Split
+```
+
+The features are normalized using Min-Max normalization:
+
+```python
+x_data = (x_data - x_data.min()) / (x_data.max() - x_data.min())
+```
+
+### Jupyter Notebook
+
+The notebook loads the dataset directly from Scikit-learn and separates the features and target:
 
 ```python
 cancer.data
-```
-
-and the target labels are stored in:
-
-```python
 cancer.target
 ```
 
-### Removing Unnecessary Columns
+The dataset is then divided into training and testing sets using a 70/30 split.
 
-The `id` and `Unnamed: 32` columns are removed because they are not used as input features.
-
-```python 
-data = data.drop(['id', 'Unnamed: 32'], axis=1)
-```
-
-### Encoding Diagnosis Labels
-
-The diagnosis values are converted into binary numerical values:
-
-```python 
-data.diagnosis = [1 if each == 'M' else 0 for each in data.diagnosis]
-```
-
-This allows the Logistic Regression model to work with numerical target values.
-
-### Separating Features and Target
-
-The input features and target variable are separated:
-
-```python 
-x_data = data.drop(['diagnosis'], axis=1)
-y_data = data['diagnosis']
-```
 
 ### Data Normalization
 
