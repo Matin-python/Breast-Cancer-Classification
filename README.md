@@ -368,6 +368,21 @@ Breast-Cancer-Classification/
 ```
 
 
+## Installation
+
+Install the required libraries using:
+
+```bash
+pip install pandas scikit-learn xgboost jupyter
+```
+
+You can also install all dependencies using:
+
+```bash
+pip install -r requirements.txt
+```
+
+
 ## How to Run
 
 ### Python Project
@@ -409,51 +424,24 @@ jupyter
 ```
 
 
-## Installation
-
-Install the required libraries using:
-
-```bash
-pip install pandas scikit-learn xgboost jupyter
-```
-
-You can also install all dependencies using:
-
-```bash
-pip install -r requirements.txt
-```
-
-
-## How to Run
-
-1. Make sure Python is installed.
-2. Place `cancer.csv` in the project directory.
-3. Install the required libraries.
-4. Run the Python script:
-
-```bash 
-python cancer_classification.py
-```
-
-The program will train the Logistic Regression model, make predictions on the test dataset, and print the number of incorrect predictions and the final accuracy.
-
-
 ## Future Improvements
 
-* Add training and test accuracy separately
-* Add a confusion matrix
+* Add confusion matrices
 * Add precision, recall, and F1-score
-* Visualize the dataset and feature relationships
-* Compare Logistic Regression with other classification algorithms
 * Add cross-validation
-* Improve the model evaluation process
+* Apply feature scaling to the notebook models
+* Tune model hyperparameters
+* Add a model comparison visualization
+* Add feature importance analysis
+* Improve reproducibility with fixed random states
+* Add predictions for new data
 
 
 ## Contributing
 
 Contributions are welcome.
 
-You can improve the preprocessing, add new Machine Learning algorithms, improve the evaluation process, or add new visualizations to the project.
+You can improve the preprocessing, add new classification algorithms, improve the evaluation process, or add new visualizations to the project.
 
 
 ## License
