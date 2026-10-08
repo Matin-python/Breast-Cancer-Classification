@@ -1,15 +1,66 @@
 # 🩺 Breast Cancer Classification using Machine Learning
 
-A Machine Learning project that classifies breast cancer cases as malignant or benign by comparing six different classification algorithms using the Scikit-learn Breast Cancer dataset.
+A Machine Learning project containing two implementations of breast cancer classification using the same dataset: a Logistic Regression model in Python and a Jupyter Notebook comparing six different classification algorithms.
 
 
 ## Overview
 
-This project demonstrates how different Machine Learning classification algorithms can be used to classify breast cancer cases.
+This repository contains two related implementations for classifying breast cancer cases as **malignant** or **benign**.
 
-The project uses the built-in Breast Cancer dataset provided by Scikit-learn. The dataset contains numerical features describing characteristics of breast cancer cells, with the goal of predicting the cancer diagnosis.
+Both implementations use the **same Breast Cancer Wisconsin Diagnostic dataset**, but the dataset is loaded in two different ways.
 
-Six different classification algorithms are trained and evaluated using the same training and testing datasets:
+The first implementation is a Python script that uses a downloaded `cancer.csv` file. It performs data preprocessing, feature normalization, and uses **Logistic Regression** for classification.
+
+The second implementation is a Jupyter Notebook that loads the same dataset directly from Scikit-learn using `load_breast_cancer()`. It then compares six different Machine Learning classification algorithms.
+
+The purpose of having both implementations in the same repository is to demonstrate different ways of working with the same dataset and comparing different Machine Learning approaches.
+
+
+## Projects
+
+### 1. Logistic Regression
+
+The first implementation is written in Python:
+
+```text
+cancer_classification.py
+```
+
+This project uses the downloaded dataset:
+
+```text
+cancer.csv
+```
+
+The main steps include:
+
+* Loading the dataset from a CSV file
+* Removing unnecessary columns
+* Converting diagnosis labels into numerical values
+* Separating features and target
+* Normalizing the input features
+* Splitting the dataset into training and testing sets
+* Training a Logistic Regression model
+* Predicting the diagnosis of test samples
+* Calculating classification accuracy
+
+### 2. Machine Learning Model Comparison
+
+The second implementation is provided as a Jupyter Notebook:
+
+```text
+breast_cancer_classification.ipynb
+```
+
+Instead of reading a local CSV file, the notebook loads the dataset directly from Scikit-learn:
+
+```python
+from sklearn import datasets
+
+cancer = datasets.load_breast_cancer()
+```
+
+The notebook then trains and compares six different classification algorithms:
 
 * Support Vector Machine (SVM)
 * Gaussian Naive Bayes
@@ -18,7 +69,9 @@ Six different classification algorithms are trained and evaluated using the same
 * XGBoost
 * K-Nearest Neighbors (KNN)
 
-The performance of each model is evaluated using **accuracy score**, allowing the results of the different algorithms to be compared.
+Each model is evaluated using the same training and testing data.
+
+
 
 
 ## Features
