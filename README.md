@@ -367,18 +367,17 @@ Breast-Cancer-Classification/
 └── README.md
 ```
 
-
 ## Installation
 
 Install the required libraries using:
 
-```bash 
-pip install pandas scikit-learn
+```bash
+pip install pandas scikit-learn xgboost jupyter
 ```
 
 You can also install all dependencies using:
 
-```bash 
+```bash
 pip install -r requirements.txt
 ```
 
