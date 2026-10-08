@@ -354,15 +354,14 @@ The two implementations demonstrate different approaches to the same classificat
 The dataset itself is the same; only the way it is loaded and processed in the two implementations is different.
 
 
-
-
 ## Project Structure
 
 ```text 
-Cancer-Classification/
+Breast-Cancer-Classification/
 │
 ├── cancer.csv
 ├── cancer_classification.py
+├── breast_cancer_classification.ipynb
 ├── requirements.txt
 ├── LICENSE
 └── README.md
