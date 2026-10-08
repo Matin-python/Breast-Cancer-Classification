@@ -342,6 +342,17 @@ KNN Accuracy: XX.XX
 The exact results may vary depending on the model configuration and train/test split.
 
 
+## Model Comparison
+
+The two implementations demonstrate different approaches to the same classification problem.
+
+| Implementation   | Data Loading                        | Models                                                       |
+| ---------------- | ----------------------------------- | ------------------------------------------------------------ |
+| Python Script    | Local `cancer.csv`                  | Logistic Regression                                          |
+| Jupyter Notebook | Scikit-learn `load_breast_cancer()` | SVM, Naive Bayes, Decision Tree, Random Forest, XGBoost, KNN |
+
+The dataset itself is the same; only the way it is loaded and processed in the two implementations is different.
+
 
 
 
