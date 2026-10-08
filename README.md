@@ -178,50 +178,44 @@ cancer.target
 The dataset is then divided into training and testing sets using a 70/30 split.
 
 
-### Data Normalization
-
-The input features are normalized using Min-Max normalization:
-
-```python 
-x_data = (x_data - x_data.min()) / (x_data.max() - x_data.min())
-```
-
-This scales the feature values to a common range.
-
-### Train/Test Split
-
-The dataset is divided into training and testing sets using a 85/15 split.
-
-```text 
-85% → Training data
-15% → Testing data
-```
-
-
 ## Machine Learning Workflow
 
-The project follows the workflow below:
+### Python Project
 
-```text 
-Cancer Dataset
+```text
+Load Dataset
       ↓
-Remove Unnecessary Columns
+Data Preprocessing
       ↓
-Convert Diagnosis Labels
-      ↓
-Separate Features and Target
-      ↓
-Normalize Input Features
+Feature Normalization
       ↓
 Train/Test Split
       ↓
-Train Logistic Regression Model
+Logistic Regression
+      ↓
+Prediction
+      ↓
+Accuracy Evaluation
+```
+
+### Jupyter Notebook
+
+```text
+Downloaded Dataset
+      ↓
+Data Preprocessing
+      ↓
+Scikit-learn Dataset
+      ↓
+Train/Test Split
+      ↓
+Train Multiple Classifiers
       ↓
 Make Predictions
       ↓
-Compare Predictions with Actual Values
-      ↓
 Calculate Accuracy
+      ↓
+Compare Models
 ```
 
 
