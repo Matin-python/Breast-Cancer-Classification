@@ -72,21 +72,22 @@ The notebook then trains and compares six different classification algorithms:
 Each model is evaluated using the same training and testing data.
 
 
-
-
 ## Features
 
 * Breast cancer classification
-* Built-in Scikit-learn dataset
+* Malignant and benign classification
+* Data preprocessing
+* Feature normalization
 * Train/test data splitting
-* Support Vector Machine classification
-* Gaussian Naive Bayes classification
-* Decision Tree classification
-* Random Forest classification
-* XGBoost classification
-* K-Nearest Neighbors classification
+* Logistic Regression
+* Support Vector Machine
+* Gaussian Naive Bayes
+* Decision Tree
+* Random Forest
+* XGBoost
+* K-Nearest Neighbors
 * Accuracy evaluation
-* Comparison of multiple Machine Learning models
+* Machine Learning model comparison
 
 
 ## Technologies Used
@@ -95,41 +96,48 @@ Each model is evaluated using the same training and testing data.
 * Pandas
 * Scikit-learn
 * XGBoost
+* Jupyter Notebook
 
 
 ## Dataset
 
-The project uses the **Breast Cancer Wisconsin Diagnostic dataset** provided by Scikit-learn.
+Both projects use the **same Breast Cancer Wisconsin Diagnostic dataset**.
 
-The dataset is loaded directly using:
-
-```python
-from sklearn import datasets
-
-cancer = datasets.load_breast_cancer()
-```
-
-The dataset provides numerical features related to breast cancer cell characteristics.
-
-The target variable contains two classes:
+The dataset contains numerical features describing characteristics of breast cancer cell nuclei and is used to classify cases into two categories:
 
 ```text
-malignant
-benign
+Malignant
+Benign
 ```
 
-The available feature names and target names are displayed in the notebook.
+### Python Dataset
 
-The dataset contains numerical features related to cancer cases.
+The Python implementation uses a downloaded copy of the dataset:
 
-The diagnosis values are converted into numerical labels:
+```text
+cancer.csv
+```
 
-```text 
+The `diagnosis` column is converted into numerical labels:
+
+```text
 M → 1
 B → 0
 ```
 
-where `M` represents a malignant case and `B` represents a benign case.
+The columns `id` and `Unnamed: 32` are removed before training.
+
+### Jupyter Notebook Dataset
+
+The notebook loads the dataset directly from Scikit-learn:
+
+```python
+cancer = datasets.load_breast_cancer()
+```
+
+This avoids manually storing the dataset as a CSV file and provides the dataset directly through the Scikit-learn library.
+
+Therefore, both implementations work with the **same dataset**, but the source of the data in the code is different.
 
 
 ## Data Preprocessing
